@@ -28,13 +28,13 @@
 *  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 *********************************************************************************/
 
-#ifndef BANKSTATE_H
-#define BANKSTATE_H
+#ifndef HBMSIM_BANKSTATE_H
+#define HBMSIM_BANKSTATE_H
 
 #include "SystemConfiguration.h"
 #include "BusPacket.h"
 
-namespace DRAMSim {
+namespace HBMSim {
 enum CurrentBankState
 {
   Idle,

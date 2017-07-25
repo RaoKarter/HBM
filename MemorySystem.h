@@ -28,8 +28,8 @@
 *  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 *********************************************************************************/
 
-#ifndef MEMORYSYSTEM_H
-#define MEMORYSYSTEM_H
+#ifndef HBMSIM_MEMORYSYSTEM_H
+#define HBMSIM_MEMORYSYSTEM_H
 
 #include "SimulatorObject.h"
 #include "SystemConfiguration.h"
@@ -39,7 +39,7 @@
 #include "Callback.h"
 #include <deque>
 
-namespace DRAMSim
+namespace HBMSim
 {
 typedef CallbackBase<void,unsigned,uint64_t,uint64_t> Callback_t;
 class MemorySystem : public SimulatorObject
@@ -64,7 +64,7 @@ class MemorySystem : public SimulatorObject
     vector<Rank *> *ranks;
     deque<Transaction *> pendingTransactions; 
 }; //class MemorySystem
-} //namespace DRAMSim
+} //namespace HBMSim
 
 #endif
 

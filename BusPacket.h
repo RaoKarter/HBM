@@ -28,12 +28,12 @@
 *  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 *********************************************************************************/
 
-#ifndef BUSPACKET_H
-#define BUSPACKET_H
+#ifndef HBMSIM_BUSPACKET_H
+#define HBMSIM_BUSPACKET_H
 
 #include "SystemConfiguration.h"
 
-namespace DRAMSim {
+namespace HBMSim {
 enum BusPacketType
 {
   READ,
@@ -71,7 +71,7 @@ class BusPacket
     uint64_t physicalAddress;
     void *data;
 }; //class BusPacket
-} //namespace DRAMSim
+} //namespace HBMSim
 
 #endif
 

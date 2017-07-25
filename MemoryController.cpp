@@ -36,7 +36,7 @@
 
 #define SEQUENTIAL(rank,bank) (rank*NUM_BANKS)+bank
 
-using namespace DRAMSim;
+using namespace HBMSim;
 
 MemoryController::MemoryController(unsigned sid, unsigned cid, MemorySystem *parent) :
   stackID(sid),

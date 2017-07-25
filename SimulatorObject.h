@@ -35,8 +35,8 @@
 
 
 
-#ifndef SIMULATOROBJ_H
-#define SIMULATOROBJ_H
+#ifndef HBMSIM_SIMULATOROBJ_H
+#define HBMSIM_SIMULATOROBJ_H
 
 //SimulatorObject.h
 //
@@ -45,7 +45,7 @@
 
 #include <stdint.h>
 
-namespace DRAMSim
+namespace HBMSim
 {
 class SimulatorObject
 {

@@ -32,10 +32,10 @@
 
 #include <stdint.h> // uint64_t
 
-#ifndef CALLBACK_H
-#define CALLBACK_H
+#ifndef HBMSIM_CALLBACK_H
+#define HBMSIM_CALLBACK_H
 
-namespace DRAMSim
+namespace HBMSim
 {
 
 template <typename ReturnT, typename Param1T, typename Param2T,
@@ -48,7 +48,7 @@ public:
 };
 
 template <typename Return, typename Param1T, typename Param2T, typename Param3T>
-DRAMSim::CallbackBase<Return,Param1T,Param2T,Param3T>::~CallbackBase() {}
+HBMSim::CallbackBase<Return,Param1T,Param2T,Param3T>::~CallbackBase() {}
 
 template <typename ConsumerT, typename ReturnT,
 typename Param1T, typename Param2T, typename Param3T >
@@ -81,6 +81,6 @@ private:
 };
 
 typedef CallbackBase <void, unsigned, uint64_t, uint64_t> TransactionCompleteCB;
-} // namespace DRAMSim
+} // namespace HBMSim
 
 #endif

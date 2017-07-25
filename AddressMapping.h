@@ -27,10 +27,10 @@
 *  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 *  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 *********************************************************************************/
-#ifndef ADDRESS_MAPPING_H
-#define ADDRESS_MAPPING_H
+#ifndef HBMSIM_ADDRESS_MAPPING_H
+#define HBMSIM_ADDRESS_MAPPING_H
 
-namespace DRAMSim {
+namespace HBMSim {
   void addressMapping(uint64_t addr, unsigned &chn, unsigned &rnk, unsigned &bnk, unsigned &row, 
       unsigned &col);
 }

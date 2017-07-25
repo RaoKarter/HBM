@@ -31,8 +31,8 @@
 
 
 
-#ifndef RANK_H
-#define RANK_H
+#ifndef HBMSIM_RANK_H
+#define HBMSIM_RANK_H
 
 #include "SimulatorObject.h"
 #include "BusPacket.h"
@@ -40,9 +40,9 @@
 #include "BankState.h"
 
 using namespace std;
-using namespace DRAMSim;
+using namespace HBMSim;
 
-namespace DRAMSim
+namespace HBMSim
 {
 class MemoryController; //forward declaration
 class Rank : public SimulatorObject

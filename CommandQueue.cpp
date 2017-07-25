@@ -32,7 +32,7 @@
 #include "MemoryController.h"
 #include <assert.h>
 
-using namespace DRAMSim;
+using namespace HBMSim;
 
 CommandQueue::CommandQueue(vector<vector<BankState>>& states) :
   bankStates(states),
