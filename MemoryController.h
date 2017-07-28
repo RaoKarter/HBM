@@ -42,6 +42,7 @@
 #include "BusPacket.h"
 #include "BankState.h"
 #include "Rank.h"
+#include "Stats.h"
 
 using namespace std;
 
@@ -92,7 +93,11 @@ public:
   void updateBankStates();
   void update();
   void printStats(bool finalStats = false);
-  void resetStats(); 
+  void resetStats();
+
+  // retrieve the target stats entry 'metric' in 'stat'
+  bool getStats( double *stat, DSIM_STAT metric );
+  bool getStats( uint64_t *stat, DSIM_STAT metric );
 
 public:
   vector<Transaction*> transactionQueue;

@@ -38,6 +38,7 @@
 #include "Transaction.h"
 #include "Callback.h"
 #include <deque>
+#include "Stats.h"
 
 namespace DRAMSim
 {
@@ -52,6 +53,9 @@ class MemorySystem : public SimulatorObject
     void printStats(bool finalStats);
     bool WillAcceptTransaction();
     void RegisterCallbacks(Callback_t *readDone, Callback_t *writeDone);
+
+    bool getStats( double *stat, DSIM_STAT metric );
+    bool getStats( uint64_t *stat, DSIM_STAT metric );
 
   public:
     Callback_t* ReturnReadData;
