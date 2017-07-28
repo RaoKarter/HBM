@@ -38,7 +38,7 @@ unsigned NUM_RANKS;
 unsigned NUM_RANKS_LOG;
 unsigned NUM_BANKS_PER_BANKGROUP;
 
-namespace HBMSim {
+namespace DRAMSim {
 
 MemorySystem::MemorySystem(unsigned sid, unsigned cid) :
   ReturnReadData(NULL), 
@@ -147,14 +147,14 @@ void MemorySystem::RegisterCallbacks(Callback_t* readCB, Callback_t* writeCB)
   WriteDataDone = writeCB;
 }
 
-} /*namespace HBMSim */
+} /*namespace DRAMSim */
 
 // This function can be used by autoconf AC_CHECK_LIB since
 // apparently it can't detect C++ functions.
 // Basically just an entry in the symbol table
 extern "C"
 {
-	void libhbmsim_is_present(void)
+	void libdramsim_is_present(void)
 	{
 		;
 	}

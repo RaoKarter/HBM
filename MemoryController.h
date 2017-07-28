@@ -29,8 +29,8 @@
 *********************************************************************************/
 
 
-#ifndef HBMSIM_MEMORYCONTROLLER_H
-#define HBMSIM_MEMORYCONTROLLER_H
+#ifndef MEMORYCONTROLLER_H
+#define MEMORYCONTROLLER_H
 
 #include <map>
 #include <deque>
@@ -45,7 +45,7 @@
 
 using namespace std;
 
-namespace HBMSim
+namespace DRAMSim
 {
 #ifdef DEBUG_LATENCY
 class LatencyBreakdown

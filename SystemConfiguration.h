@@ -30,8 +30,8 @@
 
 
 
-#ifndef HBMSIM_SYSCONFIG_H
-#define HBMSIM_SYSCONFIG_H
+#ifndef SYSCONFIG_H
+#define SYSCONFIG_H
 
 #include <iostream>
 #include <fstream>
@@ -166,7 +166,7 @@ enum OperationMode
 // set by IniReader.cpp
 
 
-namespace HBMSim
+namespace DRAMSim
 {
 typedef void (*returnCallBack_t)(unsigned id, uint64_t addr, uint64_t clockcycle);
 

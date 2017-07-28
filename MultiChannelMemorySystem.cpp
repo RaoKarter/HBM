@@ -34,7 +34,7 @@
 #include "AddressMapping.h"
 #include "IniReader.h"
 
-using namespace HBMSim; 
+using namespace DRAMSim; 
 
 std::atomic<int> MultiChannelMemorySystem::stackCount(0);
 
@@ -138,7 +138,7 @@ void MultiChannelMemorySystem::RegisterCallbacks(TransactionCompleteCB *readDone
     x->RegisterCallbacks(readDone, writeDone);
 }
 
-namespace HBMSim 
+namespace DRAMSim 
 {
   MultiChannelMemorySystem *getMemorySystemInstance(const string &dev, const string &sys, const 
       string &pwd, unsigned megsOfMemory) 

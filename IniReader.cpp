@@ -103,7 +103,7 @@ bool DEBUG_POWER;
 
 bool DEBUG_INI_READER=false;
 
-namespace HBMSim
+namespace DRAMSim
 {
 RowBufferPolicy rowBufferPolicy;
 SchedulingPolicy schedulingPolicy;
@@ -419,4 +419,4 @@ void IniReader::InitEnumsFromStrings()
   }
 }
 
-} // namespace HBMSim
+} // namespace DRAMSim

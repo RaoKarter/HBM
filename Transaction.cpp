@@ -35,7 +35,7 @@ using std::endl;
 using std::hex; 
 using std::dec; 
 
-namespace HBMSim {
+namespace DRAMSim {
 
 Transaction::Transaction(TransactionType transType, uint64_t addr, void *dat) :
   transactionType(transType),

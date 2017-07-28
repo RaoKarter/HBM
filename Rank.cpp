@@ -36,7 +36,7 @@
 #include "MemoryController.h"
 
 using namespace std;
-using namespace HBMSim;
+using namespace DRAMSim;
 
 Rank::Rank() :
   id(-1),

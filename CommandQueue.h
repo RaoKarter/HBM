@@ -28,8 +28,8 @@
 *  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 *********************************************************************************/
 
-#ifndef HBMSIM_CMDQUEUE_H
-#define HBMSIM_CMDQUEUE_H
+#ifndef CMDQUEUE_H
+#define CMDQUEUE_H
 
 #include "BusPacket.h"
 #include "BankState.h"
@@ -39,7 +39,7 @@
 
 using namespace std;
 
-namespace HBMSim {
+namespace DRAMSim {
 class CommandQueue : public SimulatorObject
 {
   private:
@@ -93,7 +93,7 @@ class CommandQueue : public SimulatorObject
     vector<vector<unsigned>> tFAWCountdown;
     vector<vector<unsigned>> rowAccessCounters;
 }; //class CommandQueue
-} //namespace HBMSim
+} //namespace DRAMSim
 
 #endif
 

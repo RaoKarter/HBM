@@ -28,15 +28,15 @@
 *  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 *********************************************************************************/
 
-#ifndef HBMSIM_TRANSACTION_H
-#define HBMSIM_TRANSACTION_H
+#ifndef TRANSACTION_H
+#define TRANSACTION_H
 
 #include "SystemConfiguration.h"
 #include "BusPacket.h"
 
 using std::ostream; 
 
-namespace HBMSim {
+namespace DRAMSim {
 enum TransactionType
 {
   DATA_READ,
@@ -98,7 +98,7 @@ class Transaction
     uint64_t timeAdded;
     uint64_t timeReturned;
 }; //class Transaction
-} //namespace HBMSim
+} //namespace DRAMSim
 
 #endif
 

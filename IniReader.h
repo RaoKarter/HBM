@@ -28,8 +28,8 @@
 *  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 *********************************************************************************/
 
-#ifndef HBMSIM_INIREADER_H
-#define HBMSIM_INIREADER_H
+#ifndef INIREADER_H
+#define INIREADER_H
 
 #include <iostream>
 #include <fstream>
@@ -46,7 +46,7 @@ using namespace std;
 #define DEFINE_BOOL_PARAM(name, paramtype) {#name, &name, BOOL, paramtype, false}
 #define DEFINE_UINT64_PARAM(name, paramtype) {#name, &name, UINT64, paramtype, false}
 
-namespace HBMSim
+namespace DRAMSim
 {
 
 typedef enum _variableType {STRING, UINT, UINT64, FLOAT, BOOL} varType;

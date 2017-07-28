@@ -32,8 +32,8 @@
 
 
 
-#ifndef HBMSIM_PRINT_MACROS_H
-#define HBMSIM_PRINT_MACROS_H
+#ifndef PRINT_MACROS_H
+#define PRINT_MACROS_H
 
 #include <iostream>
 

@@ -31,7 +31,7 @@
 #include "BankState.h"
 
 using namespace std;
-using namespace HBMSim;
+using namespace DRAMSim;
 
 BankState::BankState():
     currentBankState(Idle),

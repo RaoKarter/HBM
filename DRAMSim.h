@@ -29,15 +29,15 @@
 *********************************************************************************/
 
 
-#ifndef HBMSIM_H
-#define HBMSIM_H
+#ifndef DRAMSIM_H
+#define DRAMSIM_H
 
 #include "Callback.h"
 #include <string>
 
 using std::string;
 
-namespace HBMSim 
+namespace DRAMSim 
 {
   class MultiChannelMemorySystem 
   {
